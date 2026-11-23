@@ -35,6 +35,7 @@ online-quiz-studio/
 * Libraries: pypdf, python-docx, Pillow (PIL), python-dotenv
 
 # Local Setup & Installation
+
 **Clone the repository:** git clone [https://github.com/](https://github.com/)<your-username>/<repository-name>.git
 cd <repository-name>
 **Create and activate a virtual environment (Windows PowerShell):** python -m venv venv
