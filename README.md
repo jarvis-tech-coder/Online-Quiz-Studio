@@ -25,11 +25,13 @@ online-quiz-studio/
 ├── .env.example        # Sample environment variable template
 ├── .gitignore          # Ignored files (.env, *.db, venv/, __pycache__/, .vscode/)
 └── README.md           # Project documentation
+```
+
+## Tech Stack
+* ** Language: ** Python
+* ** Web Framework: ** Streamlit
+* ** AI SDK & Models: ** google-genai (Gemini Flash models)
+* ** Database: ** SQLite (sqlite3)
+* ** Libraries: ** pypdf, python-docx, Pillow (PIL), python-dotenv
 
 
-Tech Stack
-Language: Python
-Web Framework: Streamlit
-AI SDK & Models: google-genai (Gemini Flash models)
-Database: SQLite (sqlite3)
-Libraries: pypdf, python-docx, Pillow (PIL), python-dotenv
