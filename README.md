@@ -25,23 +25,61 @@ online-quiz-studio/
 ├── .env.example        # Sample environment variable template
 ├── .gitignore          # Ignored files (.env, *.db, venv/, __pycache__/, .vscode/)
 └── README.md           # Project documentation
-```
 
-## Tech Stack
-* Language: Python
-* Web Framework: Streamlit
-* AI SDK & Models: google-genai (Gemini Flash models)
-* Database: SQLite (sqlite3)
-* Libraries: pypdf, python-docx, Pillow (PIL), python-dotenv
+## Tech Stack & Architecture
 
-# Local Setup & Installation
+| Layer | Technology / Library | Purpose |
+| :--- | :--- | :--- |
+| **Language** | Python 3.10+ | Core application logic, validation, and data handling |
+| **Web Framework** | Streamlit | Interactive UI, reactive countdown fragments, and analytics charts |
+| **AI & Vision Engine** | Google GenAI SDK (`google-genai`) | Topic, document, and image-based MCQ generation with multi-model fallback |
+| **Database** | SQLite (`sqlite3`) | Local relational storage (`quiz_app.db`) for student profiles, avatars, and scores |
+| **Document Parsers** | `pypdf` & `python-docx` | Text extraction from uploaded `.pdf` and `.docx` study materials |
+| **Image Processing** | Pillow (`PIL`) | EXIF normalization and square avatar thumbnail encoding (`240x240` JPEG) |
+| **Configuration** | `python-dotenv` | Loads `GEMINI_API_KEY` securely from `.env` |
 
-**Clone the repository:** git clone [https://github.com/](https://github.com/)<your-username>/<repository-name>.git
+---
+
+## Prerequisites
+
+Before setting up the project locally, make sure you have:
+
+* **Python 3.10 or higher** installed on your system
+* **Git** installed for cloning the repository
+* A valid **Google Gemini API Key** from [Google AI Studio](https://aistudio.google.com/)
+
+---
+
+## Step-by-Step Local Setup & Installation
+
+### Step 1: Clone the Repository
+Open your terminal (PowerShell or Command Prompt) and clone this repository:
+
+```bash
+git clone [https://github.com/](https://github.com/)<your-username>/<repository-name>.git
 cd <repository-name>
-**Create and activate a virtual environment (Windows PowerShell):** python -m venv venv
+
+### Step 2: Create & Activate a Virtual Environment
+Isolate project dependencies using a Python virtual environment:
+python -m venv venv
 .\venv\Scripts\Activate.ps1
-**Install dependencies:** pip install -r requirements.txt
-**Configure environment variables:**
-   * Create .env file in root directory
-   * Copy .env.example to .env and add your Gemini API key
-**Run the application:** streamlit run app.py
+
+### Step 3: Install Required Dependencies
+Install all required Python packages listed in requirements.txt:
+pip install -r requirements.txt
+
+### Step 4: Configure Environment Variables
+   * **Create a .env file in the root directory (or copy .env.example):** copy .env.example .env
+   * **Open .env and add your Google Gemini API key:** GEMINI_API_KEY=your_actual_gemini_api_key_here
+
+### Step 5: Run the Application
+### Start the Streamlit development server: ###
+streamlit run app.py
+
+Once started, open your browser and visit:
+
+* Local URL: http://localhost:8501
+
+    
+
+
