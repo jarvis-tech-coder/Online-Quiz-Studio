@@ -28,10 +28,19 @@ online-quiz-studio/
 ```
 
 ## Tech Stack
-* ** Language: ** Python
-* ** Web Framework: ** Streamlit
-* ** AI SDK & Models: ** google-genai (Gemini Flash models)
-* ** Database: ** SQLite (sqlite3)
-* ** Libraries: ** pypdf, python-docx, Pillow (PIL), python-dotenv
+* Language: Python
+* Web Framework: Streamlit
+* AI SDK & Models: google-genai (Gemini Flash models)
+* Database: SQLite (sqlite3)
+* Libraries: pypdf, python-docx, Pillow (PIL), python-dotenv
 
-
+# Local Setup & Installation
+**Clone the repository:** git clone [https://github.com/](https://github.com/)<your-username>/<repository-name>.git
+cd <repository-name>
+**Create and activate a virtual environment (Windows PowerShell):** python -m venv venv
+.\venv\Scripts\Activate.ps1
+**Install dependencies:** pip install -r requirements.txt
+**Configure environment variables:**
+   * Create .env file in root directory
+   * Copy .env.example to .env and add your Gemini API key
+**Run the application:** streamlit run app.py
