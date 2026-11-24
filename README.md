@@ -81,3 +81,19 @@ Once started, open your browser and visit:
 * Local URL: http://localhost:8501
 ```
 
+## UI Preview
+
+- **Login page (Topic-Wise & Upload Modes):**
+  ![Login](screenshots/login_page.png)
+
+- **New user (Topic-Wise & Upload Modes):**
+  ![Create New Account](screenshots/NewSignin.png)
+
+- **Home Page (Danger Theme & 60s Countdown):**
+  ![Home Page](screenshots/main_quiz_.png)
+
+- **Advance Mode (Danger Theme & 60s Countdown):**
+  ![Advance Danger Mode](screenshots/advance_mode.png)
+
+- **User Profile (Topic-Wise & Upload Modes):**
+  ![User Settings](screenshots/user_setting.png)
