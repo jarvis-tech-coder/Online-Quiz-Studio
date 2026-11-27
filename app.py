@@ -557,7 +557,7 @@ if st.session_state.current_user is None:
                     max_chars=11,
                     placeholder="e.g., 23010100123",
                 )
-                reg_fullname = st.text_input("Full Name *", placeholder="e.g., Mohd Ashad")
+                reg_fullname = st.text_input("Full Name *", placeholder="e.g., John Doe")
                 reg_email = st.text_input("Email Address *", placeholder="e.g., student@example.com")
                 reg_course = st.text_input("Course / Branch (Optional)", placeholder="e.g., BCA / B.Tech CSE")
                 reg_photo = st.file_uploader(
